@@ -31,13 +31,13 @@ $(function() {
          * in the allFeeds object and ensures it has a URL defined
          * and that the URL is not empty.
          */
-         it('each feed has a URL defined & not empty', function(){
+        it('each feed has a URL defined & not empty', function(){
             allFeeds.forEach(function(feed){
-                feedUrl = feed.url;
-                expect(feedUrl).toBeDefined();
-                expect(feedUrl.length).not.toBe(0);
-            })
-         });
+            feedUrl = feed.url;
+            expect(feedUrl).toBeDefined();
+            expect(feedUrl.length).not.toBe(0);
+        });
+    });
 
 
         /* a test that loops through each feed
@@ -45,7 +45,6 @@ $(function() {
          * and that the name is not empty.
          */
          it('each feed has a name defined & not empty', function () {
-
             allFeeds.forEach(function (feed) {
                 feedName = feed.name;
                 expect(feedName).toBeDefined();
@@ -92,7 +91,7 @@ $(function() {
             loadFeed(0, done);
         });
         it('has atleast a single entry in feed container', function (done) {
-            expect($('.entry h2').length).not.toBe([0]);
+            expect($('.entry .feed').length).not.toBe([0]);
             done();
         });
 

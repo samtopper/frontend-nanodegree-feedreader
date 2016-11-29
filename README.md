@@ -1,3 +1,5 @@
+Check out the status of the feedReader at this link: https://samtopper.github.io/frontend-nanodegree-feedreader/
+
 ## Changes made:
 
 * written tests
